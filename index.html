@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="full-screen" content="yes"/>
+    <meta name="screen-orientation" content="portrait"/>
+    <meta name="viewport" content="target-densitydpi=high-dpi,width=device-width"/>            <!-- 防止点击缩放和开始有黑框-->
+    <meta name="x5-fullscreen" content="true"/>
+    <meta name="360-fullscreen" content="true"/>
+
+    <title>全民套牛</title>
+    <script type="text/javascript">
+        var useragent = navigator.userAgent;
+        if (useragent.match(/Chrome/) != 'Chrome') {
+            alert('已禁止本次访问：您必须使用微信内置浏览器访问本页面！');
+            var opened = window.open('about:blank', '_self');
+            opened.opener = null;
+            opened.close();
+        }
+    </script>
+
+    <script type="text/javascript" src="LoaderImage.js" charset="utf-8"></script>
+    <script type="text/javascript" src="globalVar.js" charset="utf-8"></script>
+    <!--<script type="text/javascript" src="game.min.js" charset="utf-8"></script>-->
+    <script type="text/javascript" src="cocos2d-js-v3.1-lite.js" charset="utf-8"></script>
+    <script type="text/javascript" src="main.js" charset="utf-8"></script>
+
+
+</head>
+<body>   
+    <canvas id="gameCanvas" width="0" height="0"></canvas>
+    <!--<div id="audio_btn" class="off">-->
+        <!--<div id="yinfu"></div>-->
+        <!--<audio loop="" src="res/bg_music2.mp3" id="media" autoplay="" preload></audio>-->
+    <!--</div>-->
+</body>
+</html>
